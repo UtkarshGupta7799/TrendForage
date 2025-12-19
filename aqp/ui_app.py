@@ -43,7 +43,13 @@ if source_mode == "Upload file":
 else:
     selected_path = st.text_input(
         "Local path to data file (CSV / CSV.GZ / Parquet)",
-        value=r"C:\data\large_10M.csv"  # change to your path
+        value="", 
+        placeholder="/opt/render/project/src/data.csv"
+    )
+    st.info(
+        "**Why Local Path?** Streamlit's file uploader often has size limits (e.g., 200MB). "
+        "For massive datasets (>1GB), it is better to place the file on the server (or volume) "
+        "and reference its absolute path here to avoid browser upload bottlenecks."
     )
     st.caption("Tip: Use .csv.gz (compressed) or .parquet for faster I/O and smaller files.")
 
