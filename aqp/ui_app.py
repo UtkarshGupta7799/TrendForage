@@ -10,13 +10,15 @@ import matplotlib.pyplot as plt
 
 
 try:
-    from aqp_engine.aqp.engine import QueryEngine
+    from aqp.engine import QueryEngine
 except ModuleNotFoundError:
+    # Fallback for local dev if run from inside aqp/
     import sys, pathlib
-    root = pathlib.Path(__file__).resolve().parents[2]
+    # Add parent to path to find 'aqp' package
+    root = pathlib.Path(__file__).resolve().parent.parent
     if str(root) not in sys.path:
         sys.path.insert(0, str(root))
-    from aqp_engine.aqp.engine import QueryEngine
+    from aqp.engine import QueryEngine
 
 st.set_page_config(page_title="TrendForage AQP Engine", layout="wide")
 
