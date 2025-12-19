@@ -47,9 +47,11 @@ else:
         placeholder="/opt/render/project/src/data.csv"
     )
     st.info(
-        "**Why Local Path?** Streamlit's file uploader often has size limits (e.g., 200MB). "
-        "For massive datasets (>1GB), it is better to place the file on the server (or volume) "
-        "and reference its absolute path here to avoid browser upload bottlenecks."
+        "**Using Large Files on Cloud (Render Disks):**\n\n"
+        "1. **Upload Limit:** Streamlit limits browser uploads (usually ~200MB).\n"
+        "2. **Solution:** for huge files (>1GB), use **Render Disks** to mount a persistent storage to this service.\n"
+        "3. **Shared Access:** Once a file is on the disk (e.g., at `/var/data/large.csv`), **ANY user** accessing this app can query it by typing that path below.\n"
+        "4. **Path:** Enter the absolute path on the server."
     )
     st.caption("Tip: Use .csv.gz (compressed) or .parquet for faster I/O and smaller files.")
 
