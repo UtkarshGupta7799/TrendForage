@@ -2,6 +2,7 @@
   <img src="https://raw.githubusercontent.com/UtkarshGupta7799/TrendForage/main/trendforage-banner.png"
        alt="TrendForage — Approximate Query Processing Engine"
        width="100%" />
+</div>
     
 # ⚡ TrendForage
 
@@ -47,18 +48,6 @@ Built with **Python** and **Streamlit**, and configured for ease of deployment o
 4.  **Open your browser**:
     Navigate to `http://localhost:8501`.
 
-## ☁️ Deployment
-
-### Deploy on Render (Recommended)
-
-This project is configured for **Render** Web Services.
-
-1.  Push your code to GitHub.
-2.  Go to [dashboard.render.com](https://dashboard.render.com/).
-3.  Select **New +** > **Web Service**.
-4.  Connect this repository.
-5.  Render will automatically pick up the configuration from `render.yaml`.
-6.  Click **Deploy**.
 
 ## 📂 Project Structure
 
@@ -73,6 +62,3 @@ TrendForage/
 └── README.md             # Project documentation
 ```
 
-## 📝 License
-
-This project is open-source and available under the MIT License.
