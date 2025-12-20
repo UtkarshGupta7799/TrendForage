@@ -1,3 +1,8 @@
+<div align="center">
+  <img src="https://raw.githubusercontent.com/UtkarshGupta7799/TrendForage/main/trendforage-banner.png"
+       alt="TrendForage — Approximate Query Processing Engine"
+       width="100%" />
+    
 # ⚡ TrendForage
 
 **TrendForage** is a powerful **Approximate Query Engine (AQP)** designed to provide rapid analytics on large datasets. By utilizing statistical sampling methods, TrendForage delivers instant results with calculated confidence intervals, allowing you to explore data faster than traditional exact query execution.
